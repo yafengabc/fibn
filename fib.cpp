@@ -1,7 +1,8 @@
 #include "iostream"
 #include "time.h"
 
-static int fib(int n){
+using namespace std;
+int fib(int n){
 	if(n==0)
 		return 0;
 	if(n==1)
@@ -10,6 +11,6 @@ static int fib(int n){
 }
 int main(){
 	clock_t t=clock();
-	printf("%d\n",fib(40));
-	printf("%f sec\n",(clock()-t)/1000.0/1000.0);
+	cout<<fib(40)<<endl;
+	cout<<(clock()-t)/1000.0/1000.0<<" sec"<<endl;
 }
