@@ -1,4 +1,4 @@
-public class Fib
+public class fib
 {
 	static int fib(int n){
 		if(n==0)
