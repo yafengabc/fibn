@@ -10,6 +10,6 @@ def fib(n)
     return fib(n-1)+fib(n-2)
 end
 
-#t=time.time()
+t=Time.new
 puts(fib(40))
-#puts(time.time()-t)
+puts "%s s" %(Time.new-t)

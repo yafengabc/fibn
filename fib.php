@@ -6,4 +6,6 @@ function fib($n){
 		return 1;
 	return fib($n-1)+fib($n-2);
 }
-echo fib(40);
+$t=microtime(true);
+echo fib(40)."\n";
+echo microtime(true)-$t." s\n";
